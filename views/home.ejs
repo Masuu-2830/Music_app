@@ -1,0 +1,37 @@
+
+<html>
+    <head>
+        <title>Hotify</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body style="font-family: sans-serif;font-weight: bold;font-size:35px;background-image: url('https://cdn.pixabay.com/photo/2014/05/21/15/18/musician-349790_1280.jpg');">
+
+<div class="row"> 
+    <div class="col-md-3"> 
+    </div> 
+    <div class="col-md-6"> 
+          <div class = "main">
+              <div class="row padder"> 
+                  <div class="col-md-3 cover"> 
+                   
+                  </div> 
+                  <div class="col-md-9"> 
+                      <h2 style="color:blue;font-weight: bold;font-size:35px"> Do you really wanna buy this? </h2> 
+                      <% var i=Math.floor(Math.random()*150); %>
+                      <h2 style="color:black;font-weight: bold;font-size:30px"> Only for $$ <%= i %> </h2> 
+                      <hr> 
+                      <a href="/bu"> 
+                      <button class="btn btn-warning btn-lg" style="color:blue;"> Buy now for $<%= i %> </button> 
+                      </a> 
+                  </div> 
+              </div> 
+
+           </div>
+    </div> 
+    <div class="col-md-2"> 
+    </div> 
+ </body>
+ </html>
+              

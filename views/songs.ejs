@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hotify</title>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+      <div class="container"  style="margin:0 auto; text-align:center;font-family:sans-serif;font-weight:bold;color:purple;padding-top:20px;">
+        <h1 style="font-size:40px;" >Welcome to Hotify</h1>
+      </div>
+      <div style="float: right; font-size: 20px;">
+
+  <a href="/logout"><button class="btb btn-primary btn-lg" style="margin-right:20px;"><i class="fa fa-user"></i> Log Out</button></a>
+</div>
+</div>
+        
+    </br>
+</br>
+<div class="container">
+<div class="row" style="display: flex;flex-wrap: wrap; ">
+<% data.forEach(function(data){ %>
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+            <img src="<%= data.cover_image %>" style="width: 100%;height: 100%;">
+          <div class="caption">
+          <div style="color:purple; font-size: 15px;"><strong>Song Name : </strong><strong><%= data.song %></strong> </div>
+          <div style="color:purple; font-size: 15px;"><strong>Artist Name : </strong><strong><%= data.artists %></strong> </div>
+        </br>
+        
+      <a href="<%= data.url %>"><button class="btn btn-primary btn-lg" ><i class="fa fa-music"></i> Play</button></a>
+      <p></p>
+      <a href="/buy"> 
+        <button class="btn btn-warning btn-lg"> Buy now  </button> 
+        </a> 
+          
+        </div>
+          </div>
+  
+            
+        </div>
+    </br>
+        <% }); %>
+</div>
+</br>
+</br>
+</br>
+
+        </body>
+        </html>
