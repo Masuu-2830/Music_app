@@ -6,7 +6,7 @@ var express = require("express"),
     LocalStrategy = require("passport-local"),
     passportLocalMongoose = require("passport-local-mongoose");
     
-mongoose.connect("mongodb+srv://ross:geller@music-u20qo.mongodb.net/test?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://ross:geller@music-u20qo.mongodb.net/test?retryWrites=true&w=majority",  {useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true });
 
 var app = express();
 var path = require('path');

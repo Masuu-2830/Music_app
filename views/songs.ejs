@@ -7,22 +7,24 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
-    <body>
-      <div class="container"  style="margin:0 auto; text-align:center;font-family:sans-serif;font-weight:bold;color:purple;padding-top:20px;">
-        <h1 style="font-size:40px;" >Welcome to Hotify</h1>
+    <body style="background-image: url('http://cdn.wallpaperinhd.net/wp-content/uploads/2018/11/02/Blue-Wallpaper-004.jpg');background-size: cover;">
+      <div class="container"  style="margin:3% auto; text-align:center;font-family:sans-serif;font-weight:bold;color: #ffff4d;padding-top:20px;">
+        <h1 style="font-size: 100px;">Hotify</h1>
       </div>
       <div style="float: right; font-size: 20px;">
 
-  <a href="/logout"><button class="btb btn-primary btn-lg" style="margin-right:20px;"><i class="fa fa-user"></i> Log Out</button></a>
+  <a href="/logout"><button class="btb btn-primary btn-xl" style="margin-right:20px;"><i class="fa fa-user"></i> Log Out</button></a>
 </div>
 </div>
         
     </br>
 </br>
+</br>
+</br>
 <div class="container">
 <div class="row" style="display: flex;flex-wrap: wrap; ">
 <% data.forEach(function(data){ %>
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-6 col-sm-12">
           <div class="thumbnail">
             <img src="<%= data.cover_image %>" style="width: 100%;height: 100%;">
           <div class="caption">
